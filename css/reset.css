@@ -1,0 +1,111 @@
+/* Reset */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+}
+
+
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  aspect-ratio: auto; /* Aspect ratio para no tener problema con el Lighthouse */
+
+
+}
+
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+
+p a {
+  display: inline;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+
+}
+
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  
+  color: white;
+  font-family: 'Montserrat';
+ 
+
+  background: rgb(56,105,159);
+  background: radial-gradient(circle, rgba(56,105,159,1) 1%, rgba(51,45,253,1) 100%);
+  
+}
+
+/* Colores personalizado */
+:root {
+ 
+ 
+  --colprimary:rgb(9, 243, 243);
+  --colsecondary: lime;
+  --bgcolor:rgb(37, 37, 37);
+}
+
+/* Codigo para la tipografia */
+@font-face {
+  font-family: 'Jersey10';
+  src: url(/fonts/Jersey_10/Jersey10-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}

@@ -1,0 +1,398 @@
+/*Inicio estructura Header*/
+.Header{
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+    
+    
+    }
+    
+    .Header-logo{
+        margin: 1rem;
+    
+      
+    }
+    
+    .Header-h1{
+        font-weight: bold;
+        color: red;
+        text-transform: uppercase;
+       
+    }
+    
+    .Svg-light{
+        color: gold;
+    }
+    
+    .Svg-light:hover{
+        color: red;
+    }
+    
+    .Svg-light:active{
+        color: var(--colsecondary);
+    }
+    
+    
+    
+    .Header-h2{
+        font-family: 'Jersey10';
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    
+    
+    
+    
+    
+    .Header-nav{
+        margin: 1rem;
+        padding-right: 3rem;
+      
+       
+    }
+    
+    
+    
+    .Header-ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 1rem;
+       
+    }
+    
+   
+    
+    .Svg-cart:hover{
+      color: var(--colprimary);
+     
+    }
+    
+    .Svg-cart:active{
+      color: var(--colsecondary);
+    }
+    
+    
+    
+    
+    
+    .Svg-account:hover{
+        color: var(--colprimary);
+    }
+    
+    .Svg-account:active{
+        color: var(--colsecondary);
+    }
+
+/*Fin estructura Header */
+
+
+
+
+/* Inicio estructura Main */
+.Main{
+   
+   
+    padding: 1rem  1rem;
+
+
+
+}
+
+
+
+.Main-h3{
+    color: var(--colprimary);
+    font-size: 18px;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin: 0.3125rem;
+}
+
+
+
+.Main-wrapper{
+    padding: 0 0 0 1rem;
+   
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 1rem;
+
+ 
+
+    
+  
+    
+    
+}
+
+
+
+.Main-h4{
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+       
+    }
+    
+.Main-h5{
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.Main-image{
+    width: 100%;
+    min-height: 300px;
+    padding: .125rem;
+    background-color: black;
+    border-radius: 10px;
+
+   transition: transform 0.5s;
+   
+
+   
+  
+}
+
+.Main-image:hover {
+    transform: scale(1.022);
+    box-shadow: 2px 2px 2px white;
+  }
+
+
+
+.Main-span {
+    
+    margin: 1rem;
+
+  }
+  
+  /* Fin estructura Main */
+
+
+
+
+  /* Inicio estructura Footer */
+ 
+
+.Footer-h4 {
+    text-transform: uppercase;
+    margin: 0.3125rem;
+    padding: 1rem;
+}
+
+
+
+.Footer-wrapper {
+
+    margin: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+
+.Image {
+    width: 100%;
+    min-height: 300px;
+    padding: .125rem;
+    background-color: black;
+    border-radius: 10px;
+
+    transition: transform 0.5s;
+    
+}
+
+.Image:hover {
+    transform: scale(1.022);
+    box-shadow: 2px 2px 2px white;
+}
+
+.Footer-span {
+    margin: 1rem;
+}
+
+
+
+
+.Footer-menu {
+    background-color: var(--bgcolor);
+    padding: 8rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Social-ul {
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+
+
+.Svg-fb:hover {
+    color: blue;
+
+}
+
+.Svg-fb:active {
+    color: var(--colsecondary);
+
+
+}
+
+
+
+
+
+
+.Svg-instagram:hover {
+
+    color: #C13584;
+
+
+}
+
+
+
+.Svg-instagram:active {
+    color: var(--colsecondary);
+
+
+}
+
+
+
+.Svg-x:hover {
+    color: #1DA1F1;
+
+}
+
+.Svg-x:active {
+    color: var(--colsecondary);
+}
+
+
+
+
+
+.Svg-yt:hover {
+    color: red;
+}
+
+.Svg-yt:active {
+    color: var(--colsecondary);
+}
+
+/* Fin estructura Footer */
+
+
+/* Inicio estructura Responsive */
+@media (max-width: 2560px) {
+    .Nav{
+       padding-bottom: 5rem;
+    }
+     }
+
+
+
+@media (max-width: 1280px) {
+    .Image-slide{
+        width: 50%;
+        
+     }
+     
+     .Image-blizzard{
+         width: 80%;
+     }
+
+     
+
+  }
+
+
+  @media (max-width:950px) {
+    .Main-wrapper{
+   
+        
+        grid-template-columns: repeat( 2, 1fr);
+        
+  }
+
+}
+
+
+  @media (max-width:700px) {
+
+
+
+
+
+
+    .Main-wrapper{
+   
+        
+        grid-template-columns: repeat( 1, 1fr);
+        
+  }
+
+
+
+  .Footer-wrapper{
+
+  
+    grid-template-columns: repeat( 1 ,1fr);
+    
+}
+
+
+}
+
+
+@media (max-width:480px) {
+
+
+    .Svg-cart{
+        width: 50px;
+    }
+
+    .Svg-account{
+        width: 50px;
+    }
+
+
+   .Footer-p{
+    margin: 1rem ;
+    text-align: center;
+
+   }
+
+}
+/* Fin estructura Responsive */

@@ -1,0 +1,146 @@
+
+/* Reset */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: rgb(56,105,159);
+  background: radial-gradient(circle, rgba(56,105,159,1) 1%, rgba(51,45,253,1) 100%);
+}
+
+
+/* Fin Reset */
+
+
+
+
+
+
+
+
+
+
+/* Incio estructura Inicia sesion  */
+
+.Wrapper{
+    width: 500px;
+    padding: 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.Wrapper-h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.Wrapper .Input-box{
+    width: 100%;
+    height: 50px;
+    margin: 1.875rem 0;
+
+    position: relative;
+}
+
+
+.Input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 2.5rem;
+    color: white;
+    padding: 1.25rem 2.8125rem 1.25rem 1.25rem;
+}
+
+.Input-box input::placeholder{
+    color: white;
+}
+
+.Input-box svg{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.Wrapper .Wrapper-forgot{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14.5px;
+    margin: -0.9375rem 0 .9375rem;
+
+}
+
+
+.Wrapper-forgot label input{
+   color: white;
+   margin: .1875rem;
+}
+
+
+.Btn{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.Btn-login{
+   
+    font-size: 16px;
+    padding: 5px;
+    background-color: cyan;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+
+    
+
+}
+
+/* Fin estructura Inicia sesion */
+
+ 
+
+/* Inicio codigo Responsive */
+@media (max-width:750px){
+    .Wrapper{
+        width: 300px;
+    }
+}
+
+
+@media (max-width:480px){
+    .Wrapper{
+        width: 200px;
+    }
+}
+
+/* Fin codigo Responsiv */
+
+
+

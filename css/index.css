@@ -1,0 +1,625 @@
+/*Inicio estructura Header*/
+
+.Header{
+background-color: var(--bgcolor);
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+
+
+
+
+
+
+}
+
+.Header-logo{
+    margin: 1rem;
+
+  
+}
+
+.Header-h1{
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+   
+}
+
+.Svg-light{
+    color: gold;
+}
+
+.Svg-light:hover{
+    color: red;
+}
+
+.Svg-light:active{
+    color: var(--colsecondary);
+}
+
+
+
+.Header-h2{
+    font-family: 'Jersey10';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.Header-nav{
+    margin: 1rem;
+    padding-right: 3rem;
+  
+   
+}
+
+
+
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+   
+}
+
+
+.Svg-cart:hover{
+  color: var(--colprimary);
+ 
+}
+
+.Svg-cart:active{
+  color: var(--colsecondary);
+}
+
+
+
+
+
+.Svg-account:hover{
+    color: var(--colprimary);
+}
+
+.Svg-account:active{
+    color: var(--colsecondary);
+}
+
+/*Fin estructura Header */
+
+
+
+/*Inicio estructura Nav*/
+
+
+.Nav{
+    width: 100%;
+    padding-bottom: 0 0 12rem 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+
+
+
+.Nav-ul{
+
+    margin: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.Nav-li{
+   text-transform: uppercase;
+}
+
+
+
+
+.Nav-a:hover{
+   
+    color: var(--colprimary);
+    
+
+}
+
+.Nav-a:active{
+    color: var(--colsecondary);
+}
+
+/*Fin estructura Nav */
+
+
+
+
+
+/* Incio estructura Carrousel */
+
+
+.Carrousel{
+    width: 60%;
+    margin: 0.2rem auto;
+    border-radius: 20px;
+   
+    background-color: #C13584;
+    position: relative;
+    overflow: hidden;
+}
+
+.Carrousel-container{
+    width: 300%;
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+   
+
+    transition: all .5s ease;
+    transform: translateX(-0%);
+}
+
+
+
+
+.Carrousel-img{
+   
+    min-height: 300px;
+   
+   
+}
+
+.Carrousel-arrow{
+    width: 3rem;
+    height: 3rem;
+  
+
+    position: absolute;
+    top: calc( 50% - 1.5rem);
+
+}
+
+.Siguiente{
+    right: 0;
+    
+}
+
+.Anterior{
+    left: 0;
+}
+
+
+
+
+.Carrousel-ul{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+
+/* Fin estructura Carrousel */
+
+
+
+
+
+
+
+
+/* Incio estructura Slider */
+
+
+.Slider{
+width: 100%;
+overflow: hidden;
+
+
+padding-bottom: 12rem;
+
+
+}
+
+.Slide{
+width: 100%;
+padding: 1rem 0;
+
+display: grid;
+grid-template-columns: repeat(7 , 1fr);
+gap: 1rem;
+
+animation: slide 20s linear infinite;
+
+
+
+}
+
+
+
+
+.Image-slide{
+   width: 30%;
+   
+}
+
+.Image-blizzard{
+    width: 50%;
+}
+
+
+
+
+@keyframes slide{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/*Fin estructura Slider*/
+
+
+
+/* Inicio estructura Main */
+
+
+.Main{
+    
+    margin: 4rem;
+   
+
+}
+
+
+
+.Main-h3{
+    color: var(--colprimary);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0.3125rem;
+}
+
+
+
+.Main-wrapper{
+   
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 1rem;
+  
+    
+    
+}
+
+
+
+.Main-image{
+    width: 100%;
+    min-height: 350px;
+    background-color: black;
+    border-radius: 10px;
+
+    transition: transform 0.5s;
+    padding: 2px;
+
+   
+  
+}
+
+.Main-image:hover {
+    transform: scale(1.022);
+    box-shadow: 2px 2px 2px white;
+  }
+
+
+.Main-h4{
+padding: 0.5rem;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+   
+}
+
+.Main-h5{
+padding: 0.5rem;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+
+
+
+  .Page-two{
+    margin: 1rem;
+  }
+  
+
+
+ 
+
+
+
+
+
+
+/* Fin estructura Main*/
+
+
+/* Inicio estructura Footer */
+
+
+
+.Footer-h6{
+    color: var(--colprimary);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0.3125rem;
+    padding: 1rem;
+   
+}
+
+
+
+.Footer-wrapper{
+
+    margin: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 1rem;
+}
+
+
+
+.Footer-h5{
+    padding: 0.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.Image{
+    width: 100%;
+    min-height: 300px;
+    background-color: black;
+    border-radius: 10px;
+
+    transition: transform 0.5s;
+    padding: 2px;
+}
+
+.Image:hover {
+    transform: scale(1.022);
+    box-shadow: 2px 2px 2px white;
+  }
+
+.Footer-span{
+    margin: 1rem;
+}
+
+
+
+
+.Footer-menu{
+    background-color: var(--bgcolor);
+    padding: 8rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Social-ul{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+.Svg-fb:hover{
+   color: blue;
+    
+}
+
+.Svg-fb:active{
+   color: var(--colsecondary);
+   
+    
+}
+
+
+
+
+
+
+.Svg-instagram:hover{
+   
+   color: #C13584;
+
+
+}
+
+
+
+.Svg-instagram:active{
+    color: var(--colsecondary);
+
+
+}
+
+
+
+
+
+.Svg-x:hover{
+    color: #1DA1F1;
+
+}
+
+.Svg-x:active{
+    color: var(--colsecondary);
+}
+
+
+
+
+
+.Svg-yt:hover{
+   color: red;
+}
+
+.Svg-yt:active{
+    color: var(--colsecondary);
+}
+
+/* Fin estructura Footer */
+
+
+/* Incio estructura Responsive */
+@media (max-width: 2560px) {
+    .Nav{
+       padding-bottom: 5rem;
+    }
+     }
+
+
+
+@media (max-width: 1280px) {
+    .Image-slide{
+        width: 50%;
+        
+     }
+     
+     .Image-blizzard{
+         width: 80%;
+     }
+
+     
+
+  }
+
+
+  @media (max-width:950px) {
+    .Main-wrapper{
+   
+        
+        grid-template-columns: repeat( 2, 1fr);
+        
+  }
+
+}
+
+
+  @media (max-width:700px) {
+
+.Carrousel{
+    width: 90%;
+}
+
+
+
+
+    .Main-wrapper{
+   
+        
+        grid-template-columns: repeat( 1, 1fr);
+        
+  }
+
+
+
+  .Footer-wrapper{
+
+  
+    grid-template-columns: repeat( 1 ,1fr);
+    
+}
+
+
+.Image-slide{
+    width: 70%;
+    
+ }
+ 
+ .Image-blizzard{
+     width: 90%;
+ }
+
+}
+
+
+@media (max-width:480px) {
+
+
+    .Svg-cart{
+        width: 50px;
+    }
+
+    .Svg-account{
+        width: 50px;
+    }
+
+    .Image-slide{
+        width: 100%;
+        
+     }
+     
+     .Image-blizzard{
+         width: 100%;
+     }
+
+
+   .Footer-p{
+    margin: 1rem ;
+    text-align: center;
+
+   }
+
+}
+
+/*  Fin estructura Responsive */
+
+
+
+
+  
+
+
+
