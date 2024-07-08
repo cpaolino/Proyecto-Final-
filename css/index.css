@@ -305,10 +305,17 @@ animation: slide 20s linear infinite;
 
 
 .Main-wrapper{
-   
+  
+
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    row-gap: 1rem;
+
+
+
+    /*display: grid;
     grid-template-columns: repeat( 3 , 1fr);
-    gap: 1rem;
+    gap: 1rem;*/
   
     
     
@@ -318,12 +325,14 @@ animation: slide 20s linear infinite;
 
 .Main-image{
     width: 100%;
-    min-height: 350px;
+    object-fit: fill;
+   
     background-color: black;
     border-radius: 10px;
 
     transition: transform 0.5s;
     padding: 2px;
+    
 
    
   
@@ -540,7 +549,7 @@ align-items: center;
     .Main-wrapper{
    
         
-        grid-template-columns: repeat( 2, 1fr);
+       /* grid-template-columns: repeat( 2, 1fr);*/
         
   }
 
