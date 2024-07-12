@@ -289,6 +289,7 @@ animation: slide 20s linear infinite;
 .Main{
     
     margin: 4rem;
+    
    
 
 }
@@ -310,6 +311,7 @@ animation: slide 20s linear infinite;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     row-gap: 1rem;
+    
 
 
 
@@ -322,16 +324,23 @@ animation: slide 20s linear infinite;
 }
 
 
+.Main-picture{
+    padding-right: 20px;
+}
+
+
 
 .Main-image{
     width: 100%;
+    min-height: 450px;
     object-fit: fill;
    
-    background-color: black;
+    background-color:grey;
     border-radius: 10px;
 
     transition: transform 0.5s;
-    padding: 2px;
+   
+   
     
 
    
@@ -402,8 +411,8 @@ align-items: center;
     margin: 1rem;
 
     display: grid;
-    grid-template-columns: repeat( 3 , 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 2rem;
 }
 
 
@@ -417,9 +426,17 @@ align-items: center;
     align-items: center;
     }
 
-.Image{
+
+
+.Footer-picture{
+    padding-right: 20px;
+}    
+
+.Footer-image{
     width: 100%;
-    min-height: 300px;
+    min-height: 450px;
+    object-fit: fill;
+    
     background-color: black;
     border-radius: 10px;
 
@@ -427,7 +444,7 @@ align-items: center;
     padding: 2px;
 }
 
-.Image:hover {
+.Footer-image:hover {
     transform: scale(1.022);
     box-shadow: 2px 2px 2px white;
   }
